@@ -12,15 +12,15 @@
         android:layout_height="wrap_content"
         android:text=" Create an account"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="35sp"
         android:layout_marginBottom="8dp"
         android:textColor="#000000"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="  it's quick and easy."
-        android:textSize="15sp"
+        android:text="   it's quick and easy."
+        android:textSize="18sp"
         android:layout_marginBottom="8dp"
         />
     <LinearLayout
@@ -96,16 +96,18 @@
     </LinearLayout>
     <LinearLayout android:orientation="vertical"
         android:layout_height="0dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_weight="1.5">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="  Birthday"
-            android:textSize="15sp" />
+            android:layout_marginTop="5dp"
+            android:text="   Birthday"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            />
         <DatePicker
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:calendarViewShown="false"
             android:datePickerMode="spinner"
@@ -116,13 +118,51 @@
             >
 
         </DatePicker>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="   Gender"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            />
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_male"
+                android:checked="true"
+                android:layout_marginStart="20dp"
+                />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_female"
+                    android:layout_marginStart="16dp"/>
+
+            <RadioButton
+                android:id="@+id/radioCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_custom"
+                android:layout_marginStart="16dp"/>
+            </RadioGroup>
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:background="@drawable/btn_green"
+                android:text="Sign Up"
+                android:textColor="#ffffff"/>
+
     </LinearLayout>
-    <Button
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@drawable/btn_green"
-        android:text="Sign Up"
-        android:textColor="#ffffff"
-        />
 </LinearLayout>
